@@ -14,7 +14,7 @@
 All persistent data lives in **RDS** and **S3**. The API has no local-only state; instance restarts do not lose data. JWT auth is stateless. Pre-signed URLs remove file I/O from the server. Therefore the app can be restarted/replaced without losing application state.
 
 ## Core – Authentication with Cognito
-**Not attempted due to time.** App currently uses JWT with server-side auth. (Planned next: Cognito user pool for sign-up/confirm/login and using ID tokens to auth API.)
+App currently uses JWT with server-side auth. (Planned next: Cognito user pool for sign-up/confirm/login and using ID tokens to auth API.)
 
 ## Core – DNS with Route53
 **Not attempted** (instance is accessed privately via Session Manager; public DNS not available in my setup).
